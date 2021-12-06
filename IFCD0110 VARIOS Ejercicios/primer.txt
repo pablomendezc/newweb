@@ -1,0 +1,16 @@
+<html>
+
+ <article>
+  <h1>ajdfkldkl</h1>
+  <p>nnvnvnnvnvnvn
+     fhhfhfhjhfhfkh</p>
+
+
+
+</article>
+
+
+elemento dentro del article
+<ul> 
+<l1> ajjjskjkjl </l1>
+</ul>
