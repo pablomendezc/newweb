@@ -1,142 +1,156 @@
 <!DOCTYPE html>
 <html lang="es" dir="LTR">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Aprende HTML, CSS y Javascript con nosotros. Somos los mejores!"/>
-    <link rel="stylesheet" type="text/css" href="../css/basicos.css"/>
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/vnd.microsoft.icon"/>
-    <title>IFCD0110  | Práctica de éxamen</title>
-<html>
-<head>
-	<title>Examen</title>
+	<meta charset="utf-8">
+	<title>Tarea práctica</title>
 </head>
 <body>
 	<header>
-		<h1>Examen</h1>
+		<h1>Práctica final UF1302</h1>
 	</header>
-<main>
-	<li>
-       <a href="../index.html">Inicio</a>
-    </li>
-	<article>
-		<h2>Ejercicio 2</h2>
-		<ul>
-			<li>Elemento1</li>
-			<li>Elemento2</li>
-				<ul>
-					<li>Elemento 2.1</li>
-					<li>Elemento 2.2</li>
-					<li>Elemento 2.3</li>
-				</ul>
-			</li>
-			<li>Elemento3</li>
-			<li>Elemento4</li>
-		</ul>
-		<ol>
-			<li>Elemento1</li>
-			<li>Elemento2</li>
-				<ul>
-					<li>Elemento 2.1</li>
-					<li>Elemento 2.2</li>
-					<li>Elemento 2.3</li>
-				</ul>
-			</li>
-			<li>Elemento3</li>
-			<li>Elemento4</li>
-		</ol>
+	<main>
+		<article>
+			<h2>Ejercicio 2</h2>
+			<!-- Los elementos ul/ol nunca serán hermanos de li -->
+			<!-- Los elementos ul/ol o son padres o hijos de un elemento li -->
+			<ul>
+				<li>Elemento 1</li>
+				<li>Elemento 				<!-- Aquí se deja el li abierto -->
+					<ul>
+						<li>Elemento 2.1</li>
+						<li>Elemento 2.2</li>
+						<li>Elemento 2.3</li>
+					</ul>
+				</li> 						<!-- Aquí se cierra el li -->
+				<li>Elemento 3</li>
+				<li>Elemento 4</li>
+			</ul>
+
+			<ol>
+				<li>Elemento 1</li>
+				<li>Elemento 2				<!-- Aquí se deja el li abierto -->
+					<ul>
+						<li>Elemento 2.1</li>
+						<li>Elemento 2.2</li>
+						<li>Elemento 2.3</li>
+					</ul>
+				</li> 						<!-- Aquí se cierra el li -->
+				<li>Elemento 3</li>
+				<li>Elemento 4</li>
+			</ol>
 		</article>
 
 		<article>
 			<h2>Ejercicio 3</h2>
-			<h2>Los tres pilares de la web</h2>
-			<p><a href=""></a>
-			ajkldsjkajkdkjdsfkjjkldsjkdsjkl</p>
-			<ul>
-				<li><a href="#html"></a>HTML</li>
-				<li><a href="#http"></a>HTML</li>
-				<li><a href="#url"></a>HTML</li>
-				</ul>
-			<h3 id="html">HTML</h3>
-			<p>kdfñasdfkldfklasklñfdklñdsfklñsfklñdklfañ</p>
+			<h3>Los tres pilares de la Web</h3>
 			<p>
-				Fuente: <a href=""><cite></cite>
+				<a href="https://es.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Tim Berners-Lee</a>
+				es considerado el padre de la Web porque desarrolló los tres elementos básicos para el funcionamiento de la
+				<a href="http://es.wikipedia.org/wiki/World_Wide_Web" target="_blank">Web</a>:
 			</p>
-			<p></p>
-			<h3 id="http">HTTP</h3>
-			<p>jkjjklajkldfjkjkljklljkljklk</p>
-			<h3 id="url">URL</h3>
-			<p></p>
-			</article>
+			<!-- Enlaces intradocumentales = # + un id -->
+			<ul>
+				<li><a href="#html">HTML</a></li>
+				<li><a href="#http">HTTP</a></li>
+				<li><a href="#url">URL</a></li>
+			</ul>
 
+			<!-- Referencia intradocumental, el atributo id -->
+			<h4 id="html">HTML</h4>
+			<p>
+				HTML, siglas de <strong>HyperText Markup Language</strong>, hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia para la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, entre otros. Es un estándar a cargo de la W3C, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su escritura e interpretación. Es el lenguaje con el que se definen las páginas web.
+			</p>
+			<p>
+				Fuente: <a href="http://es.wikipedia.org/wiki/HTML">HTML</a>, Wikipedia
+			</p>
 
+			<!-- Referencia intradocumental, el atributo id -->
+			<h4 id="http">HTTP</h4>
+			<p>
+				Copia y pega texto de este párrafo
+			</p>
+			<p>
+				Fuente: <a href="http://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a>, Wikipedia
+			</p>
 
-
-
+			<!-- Referencia intradocumental, el atributo id -->
+			<h4 id="url">URL</h4>
+			<p>
+				Copia y pega texto de este párrafo
+			</p>
+			<p>
+				Fuente: <a href="http://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme">URL</a>, Wikipedia
+			</p>
 		</article>
+
 		<article>
-			<h2>Ejercicio4</h2>
+			<h2>Ejercicio 4</h2>
+			<!-- Cita en bloque -->
 			<blockquote cite="https://uniwebsidad.com/libros/xhtml/capitulo-1/html-y-css">
-				<p>jkalkjldsjkadjksjkladsljkljkadsljkdajksjklñadsjkljaskjlfdsjlkñ</p>
-				<p>ajkldljkdsjkladsjkldjaskjkldsjkldasjkldsafjkldasfjsfjklajfajkdl</p>
-				<p>jkaljfdklsjlkñafjkljklasjkldjsaklññjkldsjkljkdasfjkldasfjakfl</p>
-				<p>adsñfjkljklsjkldsafjkljkldasfjkldsfajkjkldsafjkldasfjkladsfjk</p>
+				<p>
+					Copia y pega texto de este párrafo
+				</p>
+				<p>
+					Copia y pega texto de este párrafo
+				</p>
+				<p>
+					Copia y pega texto de este párrafo
+				</p>
+				<p>
+					Copia y pega texto de este párrafo
+				</p>
 				<figure>
-					<img src="imagennnnn" alt=""/>
+					<img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/separacion_contenidos_presentacion.gif" alt="Imagen esquema de folios que representan documentos. El primero pone 'Contenidos + Presentación' y con una flecha señála al segundo Folio que pone 'XHTML (Contenidos)'. Sigue el símbolo de la suma (+) y el último folio que pone 'CSS (Presentación)'" />
 					<figcaption>
-						<strong>Figure1</strong>
+						<strong>Figura 1.2</strong> Esquema de la separación de los contenidos y su presentación
 					</figcaption>
-					<img src="" alt=""/>
 				</figure>
 			</blockquote>
+			<!-- Atribución, decir de donde copiamos lo que etá dentro del blockquote -->
 			<p>
-				Extracto obtenido del articulo <a href="">
-					<cite>HTML y CSS</cite> de universidad
-				</a>
+				Extracto obtenido del artículo <a href="https://uniwebsidad.com/libros/xhtml/capitulo-1/html-y-css" target="_blank">HTML y CSS</a> de Wikipedia
 			</p>
-			<h2></h2>
 		</article>
+
 		<article>
-			<h2>Ejercicio5</h2>
+			<h2>Ejercicio 5</h2>
 			<table>
-				<caption></caption>
 				<thead>
 					<tr>
-						<th>ciudad</th>
-						<th>aeropueerto</th>
-						<th>playa</th>
-						<th>habitantes</th>
+						<th>Ciudad</th>
+						<th>Aeropuerto</th>
+						<th>Playa</th>
+						<th>Habitantes</th>
 					</tr>
 				</thead>
 				<tbody>
-<tr>
-	<td>Reus</td>
-	<td>si</td>
-	<td>no</td>
-	<td>100.000</td>
-</tr>
-<tr>
-	<td>Tarragon</td>
-	<td>si</td>
-	<td>no</td>
-	<td>100.000</td>
-</tr>
-<tr>
-	<td>Tarragon</td>
-	<td>si</td>
-	<td>no</td>
-	<td>100.000</td>
-</tr>
-<tr>
-	<td>Barcelona</td>
-	<td>si</td>
-	<td>si</td>
-	<td>160.000</td>
-</tr>
+					<tr>
+						<td>Reus</td>
+						<td>Si</td>
+						<td>No</td>
+						<td>100.000</td>
+					</tr>
+					<tr>
+						<td>Tarragona</td>
+						<td>No</td>
+						<td>Si</td>
+						<td>130.000</td>
+					</tr>
+					<tr>
+						<td>Madrid</td>
+						<td>Si</td>
+						<td>No</td>
+						<td>310.000</td>
+					</tr>
+					<tr>
+						<td>Barcelona</td>
+						<td>Si</td>
+						<td>Si</td>
+						<td>160.000</td>
+					</tr>
 				</tbody>
 			</table>
 		</article>
-	</article>
-	
-</main>
+	</main>
 </body>
 </html>
