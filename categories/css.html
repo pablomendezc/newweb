@@ -16,7 +16,7 @@
         *{color:red
                 }
         /*Esto anula y sustituye a lo anterior */
-        h1,h2,h4,h5,h6,h7´{
+        h1,h2,h3,h4,h5,h6,h7{
             color:black;
         }
         li,a,p{
@@ -43,12 +43,32 @@
             width: 40%;
             /*esto establece el relleno de todos los article*/
             padding: 10px;
-            /*esto establece el margen de todos los article*/
+            /*Equivale a: */
+            /*esto establece el margin equivale:3% 3% 3% 3%  */
+            /*esto establece el margin equivale:3% 3%   */
+            /*esto establece el margin top equivale:3% */
+            /*esto establece el margin botton equivale:3%; */
+            /*esto establece el margin right equivale:3%; */
+            /*esto establece el margin left equivale:3%; */
             margin: 3%;
             /*esto establece el border de todos los article*/
             border: 1px solid black;
         }
-        
+        /*esto establece el ancho 100% todos los articles dos veces*/
+        section article article {width: 100%;
+        }
+        /*esto anula y sustituye al anterior*/
+        section article {
+            width:100%;
+            margin-left: 0;
+            margin-right:0;
+            /*esto es lo mismo*/
+            margin:3% 0;
+            
+        }
+        article article p {
+            background-color:lime;
+        }
         article,
         article p,
         article h2 {
@@ -57,17 +77,21 @@
             background - color: white;
         }
 
-        footer h2 {
+        
+        footer {
             /*esto establece el alto del footer en 80px*/
             height: 80px;
             /*esto establece la linea del footer en 80px*/
             line-height: 80px;
             /*esto establece el alto de la línea de texto en el footer en 80px*/
             padding: 10px;
+            /*esto establece el relleno en el footer en 10px*/
             text-align: center;
-            /*esto estable centra el texto*/
+            /*esto establece alinear en centro el texto*/
             background-color: black;
+            /*esto establece el color de fondo del footer en negro*/
             color: white;
+            /*esto establece color del footer en blanco*/
         }
 
     </style>
@@ -78,6 +102,7 @@
         <h1>Mis primeros inicios CSS</h1>
     </header>
     <nav>
+       <h2>Menú principal</h2>
         <ul>
             <li>
                 <a href="../index.html">Inicio</a>
@@ -91,7 +116,7 @@
         </ul>
     </nav>
     <main>
-        <<section>
+        <section>
 
             </section>
             <section>
@@ -116,12 +141,12 @@
             <section>
                 <h2>ARTICULOS ANIDADOS</h2>
                 <article>
-                    <h3>lorem1</h3>
+                    <h3>Anidado lorem 1</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero nunc consequat interdum varius sit amet. Tellus rutrum tellus pellentesque eu tincidunt tortor. Purus gravida quis blandit turpis cursus. Risus nec feugiat in.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero nunc consequat interdum varius sit amet. Tellus rutrum tellus pellentesque eu tincidunt tortor. Purus gravida quis blandit turpis cursus. Risus nec feugiat in.</p>
                 </article>
                 <article>
-                    <h4>Lorem 4</h4>
+                    <h4>Anidado anidado lorem 2</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero nunc consequat interdum varius sit amet. Tellus rutrum tellus pellentesque eu tincidunt tortor. Purus gravida quis blandit turpis cursus. Risus nec feugiat in fermentum posuere urna nec tincidunt praesent. Lectus quam id leo in vitae turpis. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Gravida dictum fusce ut placerat. In fermentum et sollicitudin ac. Aenean et tortor at risus viverra adipiscing at in.</p>
                 </article>
 
