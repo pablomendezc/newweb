@@ -1,0 +1,93 @@
+<style>
+        /* selector universal*/
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: pink
+        }
+        *{color:red
+                }
+        /*Esto anula y sustituye a lo anterior */
+        h1,h2,h3,h4,h5,h6,h7{
+            color:black;
+        }
+        li,a,p{
+            color:dimgrey;
+        }
+        
+        
+        header h1 {
+            /*la propiedad height establece el alto*/
+            height: 50px;
+            /*la propiedad padding establece el relleno*/
+            padding: 8px;
+            /*la propiedad background color establece el color de fondo*/
+            background-color: gray
+        }
+
+        nav {
+            
+            /*esto es un border liso en color rojo 1px */
+            border: 1px solid red;
+        }
+        /*Esto establece la visibilidad en la pantalla en ninguna*/
+        nav h2 {
+                display: none;
+            }
+        article {
+            /*esto establece el ancho de todos los article*/
+            width: 40%;
+            /*esto establece el relleno de todos los article*/
+            padding: 10px;
+            /*Equivale a: */
+            /*esto establece el margin equivale:3% 3% 3% 3%; */
+            /*esto establece el margin equivale:3% 3%; */
+            /*esto establece el margin top equivale:3%; */
+            /*esto establece el margin botton equivale:3%; */
+            /*esto establece el margin right equivale:3%; */
+            /*esto establece el margin left equivale:3%; */
+            margin: 3%;
+            /*esto establece el border de todos los article*/
+            border: 1px solid black;
+        }
+        /*esto establece el ancho 100% todos los articles dos veces*/
+        section article article {width: 100%;
+        }
+        /*esto anula y sustituye al anterior*/
+        section article {
+            width:100%;
+            margin-left: 0;
+            margin-right:0;
+            /*esto es lo mismo*/
+            margin:3% 0;
+            
+        }
+        article article p {
+            background-color:lime;
+        }
+        article,
+        article p,
+        article h2 {
+            /*esto establece el color de fondo en blanco para todos los articles y para los parrafos y herederos de una aritcles y h2s
+            todos los articulos están separados por coma*/
+            background - color: white;
+        }
+
+        
+        footer {
+            /*esto establece el alto del footer en 80px*/
+            height: 80px;
+            /*esto establece la linea del footer en 80px*/
+            line-height: 80px;
+            /*esto establece el alto de la línea de texto en el footer en 80px*/
+            padding: 10px;
+            /*esto establece el relleno en el footer en 10px*/
+            text-align: center;
+            /*esto establece alinear en centro el texto*/
+            background-color: black;
+            /*esto establece el color de fondo del footer en negro*/
+            color: white;
+            /*esto establece color del footer en blanco*/
+        }
+
+    </style>
