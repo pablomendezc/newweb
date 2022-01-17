@@ -13,7 +13,7 @@
             color: blue;
         }
         
-        /* Esto anula y sustituye lo anterior */
+        /*  anula y sustituye lo anterior */
         
         h1, h2, h3, h4, h5, h6 {
             color: black;
@@ -169,13 +169,13 @@
               
         }
         
-        /* Establece el ancho al 100% para los articulos herederos de un articulo heredero de una sección */
+        /* Establece el ancho al 100% para los articulos herederos de un articulo que a su vez es heredero de una sección */
         section article article {
             width: 100%;
     
         }
         
-        /* Esto anula y sustituye la orden anterior de width 40% */
+        /*  anula y sustituye la orden anterior de width 40% */
         section article {
             width: 100%;
             /*  anula el margin del 3% indicado antes a izq y drch */
