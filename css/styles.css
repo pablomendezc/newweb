@@ -1,176 +1,229 @@
-@charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
-
-        /*Asteris selector universal*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        /* Selector universal=* */
+        
         * {
             margin: 0;
             padding: 0;
-          }       
-
-        *{
-            color:red
-                }
-        /*Esto anula y sustituye a lo anterior */
-        h1,h2,h3,h4,h5,h6,{
-            color:black;
-                font-family: 'Comfortaa', cursive;
-    font-family: 'Roboto', sans-serif;
-            
-    /*===============*/
-    /*formato de textos*/
-
- p,
-em,
-strong,
-li,
-a {
-    color: dimgray;
-    font-family: 'Montserrat', sans-serif;
-    font-size: medium;
-}
-    
            
-         a {
-    font-weight: bold;
-    color: steelblue;
-}
-
-em {
-    font-style: italic;
-}
-
-.todomayusculas {
-    font-variant: small-caps;
-}
-
-.pepe {
-    color: green;
-}
-
-.alineadoderecha {
-    text-align: right;
-}
-
-.alineadocentro {
-    text-align: center;
-}
-
-.alineadojustificado {
-    text-align: justify;
-}
-            /*-----------------------------------------*/
-            /*Esto selector de id es la almohadilla# */
-           
-            
-            
- /* En primer lugar va el selector de ID */
-#violeta {
-    color: darkviolet;
-}
-
-/* En segundo lugar van las clases */
-.rosa {
-    color: pink;
-}
-
-/* En tercer lugar van las etiquetas anidadas*/
-article ol li {
-    color: blue;
-}
-
-/* En último lugar irá la etiqueta individual*/
-li {
-    color: tomato;
-}
-     /* =======================*/
-/* Tabla*/   
-table.azul th,
-table.azul td {
-    border: 1px solid blue;
-    color: black;
-}
-table.azul thead th {
-    background-color: blue;
-    color: white;
-}
-/* Fin de la tabla */    
-            
+        }
         
-        header h1 {
-            /*  width es el ancho  */
-            width: 100%;
-            /*la propiedad height establece el alto*/
-            height: 50px;
-            /*la propiedad padding establece el relleno*/
-            padding: 8px;
-            /*la propiedad background color establece el color de fondo*/
-            background-color: gray
+        * {
+            color: red;
+        }
+        
+        /* Esto anula y sustituye lo anterior */
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: black;
+            font-family: 'Libre Baskerville', serif;
+            
+        }
+        
+
+        /* formato de textos con fuente importada de google fonts */
+
+        p, em, strong, li, a {
+            
+            font-family: 'Montserrat', Helvetica, sans-serif;
+            color: dimgrey;
+            font-size: 16px;
+            
         }
 
-        nav {
+
+        /* establece la anchura de la letra */
+
+        a {
+            font-weight: bold;
+            color: steelblue;
             
-            /*esto es un border liso en color rojo 1px */
+        }
+
+        /* indica el estilo de la letra */
+        em {
+            
+            font-style: italic;
+
+        }
+
+        /* clase indica que pone el texto el versalitas*/
+        .todomayusculas {
+            
+            font-variant: small-caps
+            
+        }
+
+        .pepe {
+            
+            
+            color: green;
+
+        }
+
+        .alineadoderecha{
+            
+            text-align: right;
+            
+
+        }
+
+        .alineadocentro{
+            
+            text-align: center;
+
+        }
+
+        .alineadojustificado{
+            
+            text-align: justify;
+
+        }
+
+
+        
+        /* Prioridades */
+
+        #violeta {
+            
+            color: darkviolet;
+
+        }  
+
+
+        
+        .rosa {
+            color: pink;
+        }
+
+
+        li.rosa {
+            
+            color: pink;
+    
+        }
+
+        article ol li .rosa {
+
+            color: pink
+        }
+
+
+        article ol li {
+              
+              color: blue;
+
+        }
+
+ 
+
+        li {
+            
+            color: tomato;
+
+        }
+
+
+        table.azul th,
+        table.azul td {
+            
+            border: 1px solid;
+            color: blue;
+
+        }
+
+        table.azul th {
+            background-color: blue;
+            color: white;
+        }
+
+
+        
+
+    
+      
+         
+        header h1 {     
+      /* La propiedad height establece el alto */
+            height: 50px;
+      /*  La propiedad padding es el relleno */
+            padding: 8px;
+      /*  La propiedad background color es el color de fondo */
+            background-color: gray;
+        }
+        
+        nav {
+      /* Esto es un borde liso en color rojo */
             border: 1px solid red;
         }
-        /*Esto establece la visibilidad en la pantalla en ninguna*/
+        
         nav h2 {
-                display: none;
-            }
+            /* esto hace que el texto no se visualice, lo oculta */
+            display: none;
+        }
+        
         article {
-            /*esto establece el ancho de todos los article*/
+      /* Aqui la propiedad width establece el ancho de todos los articulos */
             width: 40%;
-            /*esto establece el relleno de todos los article*/
+      /* Aqui la propiedad padding establece el relleno de todos los articulos */
             padding: 10px;
-            /*Equivale a: */
-            /*esto establece el margin equivale:3% 3% 3% 3%; */
-            /*esto establece el margin equivale:3% 3%; */
-            /*esto establece el margin top equivale:3%; */
-            /*esto establece el margin botton equivale:3%; */
-            /*esto establece el margin right equivale:3%; */
-            /*esto establece el margin left equivale:3%; */
+      /* Aqui la propiedad margin establece el margen en las 4 direcciones de todos los articulos */
             margin: 3%;
-            /*esto establece el border de todos los article*/
+      /* Aqui la propiedad border establece el borde de todos los articulos */
             border: 1px solid black;
+              
         }
-        /*esto establece el ancho 100% todos los articles dos veces*/
-        section article article {width: 100%;
+        
+        /* Establece el ancho al 100% para los articulos herederos de un articulo heredero de una sección */
+        section article article {
+            width: 100%;
+    
         }
-        /*esto anula y sustituye al anterior*/
+        
+        /* Esto anula y sustituye la orden anterior de width 40% */
         section article {
-            width:100%;
-            margin-left: 0;
-            margin-right:0;
-            /*esto es lo mismo*/
-            margin:3% 0;
+            width: 100%;
+            /* esto anula el margin del 3% indicado antes a izq y drch */
+            margin right: 0;
+            margin left: 0;
+            /* Podemos poner lo mismo así: */
+            /* Aplica 3% a arriba y abajo y 0 a derecha e izquierda */
+            margin: 3%, 0;
+            
+            
             
         }
+        
         article article p {
-            background-color:lime;
+            color: lime;
         }
-        article,
-        article p,
-        article h2 {
-            /*esto establece el color de fondo en blanco para todos los articles y para los parrafos y herederos de una aritcles y h2s
-            todos los articulos están separados por coma*/
-            background - color: white;
+        
+        article, article p, article h2 {
+           /* Establece el color de fondo para:  */
+           /* Todos los articulos */
+           /* Todos los parrafos herederos de un articulo */
+           /* Todos los h2 herederos de un articulo */
+            background-color: white;
         }
-
+        
+       
+        
         
         footer {
-            /*esto establece el alto del footer en 80px*/
+            /* Esto establece el alto del footer en 80px */
             height: 80px;
-            /*esto establece la linea del footer en 80px*/
+            /* line-height establece el alto de la linea de texto */
+            /* Al ponerle el mismo valor que el height centra el texto en medio de la caja verticalmente */
             line-height: 80px;
-            /*esto establece el alto de la línea de texto en el footer en 80px*/
             padding: 10px;
-            /*esto establece el relleno en el footer en 10px*/
+            /* Establece alineación del texto al centro */
             text-align: center;
-            /*esto establece alinear en centro el texto*/
             background-color: black;
-            /*esto establece el color de fondo del footer en negro*/
             color: white;
-            /*esto establece color del footer en blanco*/
         }
-
-    
+        
+       
+        
+        
+        
