@@ -1,48 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title> Estilos </title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <title>Estilos 1</title>
 </head>
+
 <body>
     <header>
-        <h1>Mis primeros inicios CSS</h1>
+        <h1>Mis primeros estilos</h1>
     </header>
     <nav>
-       <h2>Menú principal</h2>
+        <h2>Menú Principal</h2>
         <ul>
-            <li>
-                <a href="../index.html">Inicio</a>
-            </li>
             <li>
                 <a href="../pages/nosotros.html">Nosotros</a>
             </li>
             <li>
-                <a href="../pages/contacto.html">Contacto</a>
+                <a href="../pages/ejercicioHTML.html">Ejercicio</a>
+            </li>
+            <li>
+                <a href="../pages/contacto.html">Contactos</a>
             </li>
         </ul>
     </nav>
     <main>
-        
         <section>
-             <h2>Incluir Css en el mismo documento</h2>
-              <p>
+            <h2>Cómo incluir CSS en un documento XHTML</h2>
+            <p>
                 Referencia: <a href="https://uniwebsidad.com/libros/css/capitulo-1/como-incluir-css-en-un-documento-xhtml">Uniwebsidad</a>
             </p>
-         <article>
-          <h3>Cómo incluir CSS en un documento XHTML</h3> 
-            <p>Los estilos se definen en una zona específica del propio documento HTML. Se emplea la etiqueta <em>style</em> de HTML y solamente se pueden incluir en la cabecera del documento (sólo dentro de la sección <em>head</em>.</p>
-            <p>Este método se emplea cuando se define un número pequeño de estilos o cuando se quieren incluir estilos específicos en una determinada página HTML que completen los estilos que se incluyen por defecto en todas las páginas del sitio web.
-            </p> 
-            <p>El principal inconveniente es que si se quiere hacer una modificación en los estilos definidos, es necesario modificar todas las páginas que incluyen el estilo que se va a modificar.
-            </p>
-            <p>Los ejemplos mostrados en este libro utilizan este método para aplicar CSS al contenido HTML de las páginas. De esta forma el código de los ejemplos es más conciso y se aprovecha mejor el espacio.
-            </p>
-        </article>
+            <article>
+                <p>
+                    <strong>Una de las principales características de CSS es su flexibilidad y las diferentes opciones que ofrece para realizar una misma tarea. De hecho, existen tres opciones para incluir CSS en un documento HTML.</strong>
+                </p>
+                <h3>1.6.1. Incluir CSS en el mismo documento HTML</h3>
+                <p>
+                    Los estilos se definen en una zona específica del propio documento HTML. Se emplea la etiqueta <em>style</em> de HTML y solamente se pueden incluir en la cabecera del documento (sólo dentro de la sección <em>head</em>).
+                </p>
+                <p>Ejemplo:</p>
+                <p>
+                    Este método se emplea cuando se define un número pequeño de estilos o cuando se quieren incluir estilos específicos en una determinada página HTML que completen los estilos que se incluyen por defecto en todas las páginas del sitio web.</p>
+
+                <p>
+                    El principal inconveniente es que si se quiere hacer una modificación en los estilos definidos, es necesario modificar todas las páginas que incluyen el estilo que se va a modificar.</p>
+
+                <p>
+                    Los ejemplos mostrados en este libro utilizan este método para aplicar CSS al contenido HTML de las páginas. De esta forma el código de los ejemplos es más conciso y se aprovecha mejor el espacio.
+                </p>
+            </article>
             <article>
                 <h3 class="pepe">1.6.2. Definir CSS en un archivo externo</h3>
                 <!-- Aqui estamos creando dos clases: todomayusculas y pepe, al ir separadas por un espacio. No es una sola clase; los espacios separan clases, para crear una sola clase se emplearían guiones o barra baja -->
@@ -72,7 +81,8 @@
                     <em>link</em> y aplica los estilos a los contenidos de la página.
                 </p>
             </article>
-                <h3>Prioridades en CSS </h3>
+            <article>
+                <h3>Prioridades en CSS (orden descendiente)</h3>
                 <p>Las prioridades de CSS son las siguientes (por defecto la prioridad es descendiente salvo las 4 siguientes [que entre ellas existe la siguiente jerarquía en orden descendiente]), por ejemplo:</p>
                 <ol>
                     <li id="violeta" class="rosa">
@@ -88,7 +98,7 @@
                         Selector 1 etiqueta (color tomato)
                     </li>
                 </ol>
-                <h3>TABLA</h3>
+                <h3>Tabla</h3>
                 <table class="azul">
                     <caption>Tipografía</caption>
                     <thead>
@@ -145,7 +155,7 @@
         <section>
             <h2>Artículos Anidados</h2>
             <article>
-                <h3>Lorem 3</h3>
+                <h3>Lorem H3</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra pharetra massa massa ultricies mi quis. Placerat orci nulla pellentesque dignissim enim sit. Erat pellentesque adipiscing commodo elit. Enim neque volutpat ac tincidunt vitae semper. Potenti nullam ac tortor vitae purus. Habitant morbi tristique senectus et netus et. Nunc sed augue lacus viverra. Dui accumsan sit amet nulla. Senectus et netus et malesuada fames. Sit amet dictum sit amet justo donec enim diam. Sit amet facilisis magna etiam tempor orci eu lobortis. Phasellus egestas tellus rutrum tellus pellentesque. Arcu non odio euismod lacinia.
                 </p>
@@ -153,17 +163,15 @@
                     Amet nulla facilisi morbi tempus iaculis urna id volutpat. Sed risus pretium quam vulputate dignissim suspendisse in. A erat nam at lectus urna duis. Purus in massa tempor nec feugiat nisl pretium fusce id. Ridiculus mus mauris vitae ultricies. Sed libero enim sed faucibus turpis in. Enim facilisis gravida neque convallis a cras semper auctor neque. Convallis posuere morbi leo urna molestie at elementum eu. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Faucibus a pellentesque sit amet porttitor eget. Vel facilisis volutpat est velit.
                 </p>
                 <article>
-                    <h4>Lorem 4</h4>
+                    <h4>Lorem H4</h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra pharetra massa massa ultricies mi quis. Placerat orci nulla pellentesque dignissim enim sit. Erat pellentesque adipiscing commodo elit. Enim neque volutpat ac tincidunt vitae semper. Potenti nullam ac tortor vitae purus. Habitant morbi tristique senectus et netus et. Nunc sed augue lacus viverra. Dui accumsan sit amet nulla. Senectus et netus et malesuada fames. Sit amet dictum sit amet justo donec enim diam. Sit amet facilisis magna etiam tempor orci eu lobortis. Phasellus egestas tellus rutrum tellus pellentesque. Arcu non odio euismod lacinia.
                     </p>
-
                     <p>
                         Amet nulla facilisi morbi tempus iaculis urna id volutpat. Sed risus pretium quam vulputate dignissim suspendisse in. A erat nam at lectus urna duis. Purus in massa tempor nec feugiat nisl pretium fusce id. Ridiculus mus mauris vitae ultricies. Sed libero enim sed faucibus turpis in. Enim facilisis gravida neque convallis a cras semper auctor neque. Convallis posuere morbi leo urna molestie at elementum eu. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Faucibus a pellentesque sit amet porttitor eget. Vel facilisis volutpat est velit.
                     </p>
-                </article>
                     <article>
-                        <h5>Lorem 5</h5>
+                        <h5>Lorem H5</h5>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra pharetra massa massa ultricies mi quis. Placerat orci nulla pellentesque dignissim enim sit. Erat pellentesque adipiscing commodo elit. Enim neque volutpat ac tincidunt vitae semper. Potenti nullam ac tortor vitae purus. Habitant morbi tristique senectus et netus et. Nunc sed augue lacus viverra. Dui accumsan sit amet nulla. Senectus et netus et malesuada fames. Sit amet dictum sit amet justo donec enim diam. Sit amet facilisis magna etiam tempor orci eu lobortis. Phasellus egestas tellus rutrum tellus pellentesque. Arcu non odio euismod lacinia.
                         </p>
