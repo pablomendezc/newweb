@@ -1,89 +1,105 @@
-<@charset "utf-8";>
+@charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
-<style>
-        /* selector universal*/
+
+        /*Asteris selector universal*/
         * {
             margin: 0;
             padding: 0;
-            background-color: white
-        }
-        *{color:red
+          }       
+
+        *{
+            color:red
                 }
         /*Esto anula y sustituye a lo anterior */
-        h1,h2,h3,h4,h5,h6,h7{
-            color:white;
+        h1,h2,h3,h4,h5,h6,{
+            color:black;
                 font-family: 'Comfortaa', cursive;
     font-family: 'Roboto', sans-serif;
             
     /*===============*/
     /*formato de textos*/
 
-    p, em, strong,li, a {
+ p,
+em,
+strong,
+li,
+a {
+    color: dimgray;
     font-family: 'Montserrat', sans-serif;
-        color: dimgrey;
-            font-size: 16px;
+    font-size: medium;
+}
     
+           
+         a {
+    font-weight: bold;
+    color: steelblue;
 }
-            
-         /*Establece el estilo de la letra*/
-            
-            em {font-style: italic; }  
-            
-            /*font-variant*/
-            .todomayusculas {
-                font-variant;small-class;
-            
+
+em {
+    font-style: italic;
 }
-            .pepe {
-                color:green
-            }
-            
-            .alineadoderecha {
-                text-align: right;
-                
-            }
-            .alineadocentro {
-                text-align; center
-                
-            }
-            .alineadojustificado {
-                text-align; justify
-                
-            }
+
+.todomayusculas {
+    font-variant: small-caps;
+}
+
+.pepe {
+    color: green;
+}
+
+.alineadoderecha {
+    text-align: right;
+}
+
+.alineadocentro {
+    text-align: center;
+}
+
+.alineadojustificado {
+    text-align: justify;
+}
             /*-----------------------------------------*/
             /*Esto selector de id es la almohadilla# */
            
             
             
-            #violeta {color: darkviolet;}
-            .rosa {color:pink;} 
-            li.rosa {color:pink;}
-            article ol li.rosa{}
-            body main section article ol li.rosa {color:pink;}
-            li {color:tomato;}
-            
-            /*colores tabla*/
-            table.azul th,
-            table.azul td {
-               border:1px solid blue;
-                color blue
-            }
-            
-            table.azul th{
-                background-color: blue;
-                color:white;
-            }
-                           
-            a {
-                font-weight: bold;
-                color:steelblue;
-                        }
-            
-            
+ /* En primer lugar va el selector de ID */
+#violeta {
+    color: darkviolet;
+}
 
+/* En segundo lugar van las clases */
+.rosa {
+    color: pink;
+}
+
+/* En tercer lugar van las etiquetas anidadas*/
+article ol li {
+    color: blue;
+}
+
+/* En último lugar irá la etiqueta individual*/
+li {
+    color: tomato;
+}
+     /* =======================*/
+/* Tabla*/   
+table.azul th,
+table.azul td {
+    border: 1px solid blue;
+    color: black;
+}
+table.azul thead th {
+    background-color: blue;
+    color: white;
+}
+/* Fin de la tabla */    
+            
         
         header h1 {
+            /*  width es el ancho  */
+            width: 100%;
             /*la propiedad height establece el alto*/
             height: 50px;
             /*la propiedad padding establece el relleno*/
@@ -157,4 +173,4 @@
             /*esto establece color del footer en blanco*/
         }
 
-    </style>
+    
