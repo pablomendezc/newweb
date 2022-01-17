@@ -1,11 +1,12 @@
 <@charset "utf-8";>
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
 <style>
         /* selector universal*/
         * {
             margin: 0;
             padding: 0;
-            background-color: pink
+            background-color: white
         }
         *{color:red
                 }
@@ -14,11 +15,72 @@
             color:white;
                 font-family: 'Comfortaa', cursive;
     font-family: 'Roboto', sans-serif;
-        }
-        li,a,p{
-            color:dimgrey;
-        }
-        
+            
+    /*===============*/
+    /*formato de textos*/
+
+    p, em, strong,li, a {
+    font-family: 'Montserrat', sans-serif;
+        color: dimgrey;
+            font-size: 16px;
+    
+}
+            
+         /*Establece el estilo de la letra*/
+            
+            em {font-style: italic; }  
+            
+            /*font-variant*/
+            .todomayusculas {
+                font-variant;small-class;
+            
+}
+            .pepe {
+                color:green
+            }
+            
+            .alineadoderecha {
+                text-align: right;
+                
+            }
+            .alineadocentro {
+                text-align; center
+                
+            }
+            .alineadojustificado {
+                text-align; justify
+                
+            }
+            /*-----------------------------------------*/
+            /*Esto selector de id es la almohadilla# */
+           
+            
+            
+            #violeta {color: darkviolet;}
+            .rosa {color:pink;} 
+            li.rosa {color:pink;}
+            article ol li.rosa{}
+            body main section article ol li.rosa {color:pink;}
+            li {color:tomato;}
+            
+            /*colores tabla*/
+            table.azul th,
+            table.azul td {
+               border:1px solid blue;
+                color blue
+            }
+            table.azul th{
+                background-color: blue;
+                color:white;
+            }
+                           
+            a {
+                font-weight: bold;
+                color:steelblue;
+                        }
+            
+            
+
         
         header h1 {
             /*la propiedad height establece el alto*/
