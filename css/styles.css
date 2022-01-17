@@ -33,7 +33,7 @@
         }
 
 
-        /* hace la  anchura de la letra */
+        /*  anchura de  letra */
 
         a {
             font-weight: bold;
@@ -41,7 +41,7 @@
             
         }
 
-        /* indica el estilo de la letra */
+        /* estilo de la letra */
         em {
             
             font-style: italic;
@@ -81,9 +81,8 @@
 
         }
 
-
         
-        /* Prioridades */
+        /* Prioritys */
 
         #violeta {
             
@@ -91,18 +90,15 @@
 
         }  
 
-
         
         .rosa {
             color: pink;
         }
 
-
         li.rosa {
             
             color: pink;
-    
-        }
+            }
 
         article ol li .rosa {
 
@@ -117,13 +113,11 @@
         }
 
  
-
         li {
             
             color: tomato;
 
         }
-
 
         table.azul th,
         table.azul td {
@@ -145,32 +139,32 @@
       
          
         header h1 {     
-      /* La propiedad height establece el alto */
+      /*  Height establece el alto */
             height: 50px;
-      /*  La propiedad padding es el relleno */
+      /*   Padding es el relleno */
             padding: 8px;
-      /*  La propiedad background color es el color de fondo */
+      /*   background color es el color de fondo */
             background-color: gray;
         }
         
         nav {
-      /* Esto es un borde liso en color rojo */
+      /*  Borde liso en color rojo */
             border: 1px solid red;
         }
         
         nav h2 {
-            /* esto hace que el texto no se visualice, lo oculta */
+            /*  hace que el texto no se visualice, lo oculta */
             display: none;
         }
         
         article {
-      /* Aqui la propiedad width establece el ancho de todos los articulos */
+      /*  width establece el ancho de todos los articulos */
             width: 40%;
-      /* Aqui la propiedad padding establece el relleno de todos los articulos */
+      /*  padding establece el relleno de todos los articulos */
             padding: 10px;
-      /* Aqui la propiedad margin establece el margen en las 4 direcciones de todos los articulos */
+      /*  margin establece el margen en las 4 direcciones de todos los articulos */
             margin: 3%;
-      /* Aqui la propiedad border establece el borde de todos los articulos */
+      /*  propiedad border establece el borde de todos los articulos */
             border: 1px solid black;
               
         }
@@ -184,7 +178,7 @@
         /* Esto anula y sustituye la orden anterior de width 40% */
         section article {
             width: 100%;
-            /* esto anula el margin del 3% indicado antes a izq y drch */
+            /*  anula el margin del 3% indicado antes a izq y drch */
             margin right: 0;
             margin left: 0;
             /* Podemos poner lo mismo así: */
