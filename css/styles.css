@@ -122,14 +122,14 @@
         table.azul th,
         table.azul td {
             
-            border: 1px solid;
-            color: blue;
+            border: 2px solid;
+            color:black;
 
         }
 
         table.azul th {
-            background-color: blue;
-            color: white;
+            background-color: white;
+            color:darkblue;
         }
 
 
