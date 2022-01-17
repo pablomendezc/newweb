@@ -123,6 +123,9 @@
         
         <section>
              <h2>Incluir Css en el mismo documento</h2>
+              <p>
+                Referencia: <a href="https://uniwebsidad.com/libros/css/capitulo-1/como-incluir-css-en-un-documento-xhtml">Uniwebsidad</a>
+            </p>
          <article>
           <h3>Cómo incluir CSS en un documento XHTML</h3> 
             <p>Los estilos se definen en una zona específica del propio documento HTML. Se emplea la etiqueta <em>style</em> de HTML y solamente se pueden incluir en la cabecera del documento (sólo dentro de la sección <em>head</em>.</p>
@@ -134,156 +137,140 @@
             </p>
         </article>
             <article>
-            <h3 class="pepe">1.6.2. Definir CSS en un archivo externo</h3>
-            <p class="todomayusculas pepe">
-            Este texto está en small-caps
-            </p>
-            <p>Este texto esta alineado a la derecha
-            </p>
-            <p class="alineadoderecha">
-                
-            </p>
-            <p class="alinedadocentro">
-         
-            </p>
-            
-            <p class="alineadojustificado">
-            </p>
-            <p>En este caso, todos los estilos CSS se incluyen en un archivo de tipo CSS que las páginas HTML enlazan mediante la etiqueta <link>. Un archivo de tipo CSS no es más que un archivo simple de texto cuya extensión es .css Se pueden crear todos los archivos CSS que sean necesarios y cada página HTML puede enlazar tantos archivos CSS como necesite.</p>
-             <p>
-                 Si se quieren incluir los estilos del ejemplo anterior en un archivo CSS externo, se deben seguir los siguientes pasos:
-             </p>
-             <p>
+                <h3 class="pepe">1.6.2. Definir CSS en un archivo externo</h3>
+                <!-- Aqui estamos creando dos clases: todomayusculas y pepe, al ir separadas por un espacio. No es una sola clase; los espacios separan clases, para crear una sola clase se emplearían guiones o barra baja -->
+                <p class="todomayusculas pepe">
+                    Este texto está en small-caps
+                </p>
+                <p class="alineadoderecha">
+                    Este texto está alineado a la derecha
+                </p>
+                <p class="alineadocentro">
+                    Este texto está alineado al centro
+                </p>
+                <p class="alineadojustificado">
+                    En este caso, todos los estilos CSS se incluyen en un archivo de tipo CSS que las páginas HTML enlazan mediante la etiqueta <em>link</em>. Un archivo de tipo CSS no es más que un archivo simple de texto cuya extensión es <em>.css</em> Se pueden crear todos los archivos CSS que sean necesarios y cada página HTML puede enlazar tantos archivos CSS como necesite.</p>
+
+                <p>
+                    Si se quieren incluir los estilos del ejemplo anterior en un archivo CSS externo, se deben seguir los siguientes pasos:</p>
                 <ol>
-                  <li>Se crea un archivo de texto y se le añade solamente el siguiente contenido:</li>
-                   <ul>
-                    <li></li>
-                       <li><span class="verde">p</span> { color: black; font-family: Verdana; }</li>
+                    <li>1) Se crea un archivo de texto y se le añade solamente el siguiente contenido:</li>
+                    <ul>
+                        <li><span class="verde">p</span> { color: black; font-family: Verdana; }</li>
                     </ul>
-                    <li>Se guarda el archivo de texto con el nombre <em>estilos.css</em> Se debe poner especial atención a que el archivo tenga extensión <em>.css y no.txt</em></li>
-                    <li>En la página HTML se enlaza el archivo CSS externo mediante la etiqueta <em>link</em></li>
+                    <li>2) Se guarda el archivo de texto con el nombre <em>estilos.css</em> Se debe poner especial atención a que el archivo tenga extensión <em>.css</em> y no <em>.txt</em></li>
+                    <li>3) En la página HTML se enlaza el archivo CSS externo mediante la etiqueta <em>link</em>:</li>
                 </ol>
-                <article >
-                <h3>Prioridades Css</h3>
+                <p>Cuando el navegador carga la página HTML anterior, antes de mostrar sus contenidos también descarga los archivos CSS externos enlazados mediante la etiqueta
+                    <em>link</em> y aplica los estilos a los contenidos de la página.
+                </p>
+            </article>
+                <h3>Prioridades en CSS (orden descendiente)</h3>
+                <p>Las prioridades de CSS son las siguientes (por defecto la prioridad es descendiente salvo las 4 siguientes [que entre ellas existe la siguiente jerarquía en orden descendiente]), por ejemplo:</p>
                 <ol>
-                    <li id="violeta"class="rosa">selector de id (color violeta) </li>
-                    <li class="rosa">Selector de clase color (color pink) </li>
-                    <li> Selector varias etiquetas anidadadas (color azul) </li>
-                    <li>Selector de una etiqueta (color tomato)</li>
-                    <ol>
-                        <h3>Estilos para textos</h3>
-                        <table>
-                           <caption>Tipografia Css</caption>
-                            
-                            <thead>
-                                <tr>
-                                    <th>Propiedad</th>
-                                        
-                                    <th>Descripción</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Color</td>
-                                    <td>Color web</td>
-                                     
-                               </tr>
-                               <tr>
-                                    <td>font-family</td>
-                                    <td>fuentes web</td>
-                                     
-                               </tr>
-                               <tr>
-                                    <td>font-size</td>
-                                    <td>Tamaño web</td>
-                                     
-                               </tr>
-                               <tr>
-                                    <td>font-weight</td>
-                                    <td>grosor letra</td>
-                                     
-                               </tr>
-                               <tr>
-                                    <td>font-style</td>
-                                    <td>normal italic</td>
-                                     
-                               </tr>
-                            </tbody>
-                            
-                        </table>
-                                                           
-                      
-                    </ol>
+                    <li id="violeta" class="rosa">
+                        Selector de ID (color violeta)
+                    </li>
+                    <li class="rosa">
+                        Selector de clase (color rosa)
+                    </li>
+                    <li>
+                        Selector varias etiquetas anidadas (color azul)
+                    </li>
+                    <li>
+                        Selector 1 etiqueta (color tomato)
+                    </li>
                 </ol>
-                </ul>
-                </article>
-                </article>
-                  </p>
-                </section>
-                <section>
+                <h3>Tabla</h3>
+                <table class="azul">
+                    <caption>Tipografía</caption>
+                    <thead>
+                        <tr>
+                            <th>Propiedad</th>
+                            <th>Valores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Color </td>
+                            <td>Colores Web</td>
+                        </tr>
+                        <tr>
+                            <td>font-family</td>
+                            <td>Fuentes Web</td>
+                        </tr>
+                        <tr>
+                            <td>font-size</td>
+                            <td>Tamaño web </td>
+                        </tr>
+                        <tr>
+                            <td>font-weight</td>
+                            <td>Grosor letra</td>
+                        </tr>
+                        <tr>
+                            <td>font-style</td>
+                            <td>Normal o Italic</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Lorem 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra pharetra massa massa ultricies mi quis. Placerat orci nulla pellentesque dignissim enim sit. Erat pellentesque adipiscing commodo elit. Enim neque volutpat ac tincidunt vitae semper. Potenti nullam ac tortor vitae purus. Habitant morbi tristique senectus et netus et. Nunc sed augue lacus viverra. Dui accumsan sit amet nulla. Senectus et netus et malesuada fames. Sit amet dictum sit amet justo donec enim diam. Sit amet facilisis magna etiam tempor orci eu lobortis. Phasellus egestas tellus rutrum tellus pellentesque. Arcu non odio euismod lacinia.
+                </p>
+                <p>
+                    Amet nulla facilisi morbi tempus iaculis urna id volutpat. Sed risus pretium quam vulputate dignissim suspendisse in. A erat nam at lectus urna duis. Purus in massa tempor nec feugiat nisl pretium fusce id. Ridiculus mus mauris vitae ultricies. Sed libero enim sed faucibus turpis in. Enim facilisis gravida neque convallis a cras semper auctor neque. Convallis posuere morbi leo urna molestie at elementum eu. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Faucibus a pellentesque sit amet porttitor eget. Vel facilisis volutpat est velit.
+                </p>
+            </article>
+            <article>
+                <h2>Lorem 2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra pharetra massa massa ultricies mi quis. Placerat orci nulla pellentesque dignissim enim sit. Erat pellentesque adipiscing commodo elit. Enim neque volutpat ac tincidunt vitae semper. Potenti nullam ac tortor vitae purus. Habitant morbi tristique senectus et netus et. Nunc sed augue lacus viverra. Dui accumsan sit amet nulla. Senectus et netus et malesuada fames. Sit amet dictum sit amet justo donec enim diam. Sit amet facilisis magna etiam tempor orci eu lobortis. Phasellus egestas tellus rutrum tellus pellentesque. Arcu non odio euismod lacinia.
+                </p>
+                <p>
+                    Amet nulla facilisi morbi tempus iaculis urna id volutpat. Sed risus pretium quam vulputate dignissim suspendisse in. A erat nam at lectus urna duis. Purus in massa tempor nec feugiat nisl pretium fusce id. Ridiculus mus mauris vitae ultricies. Sed libero enim sed faucibus turpis in. Enim facilisis gravida neque convallis a cras semper auctor neque. Convallis posuere morbi leo urna molestie at elementum eu. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Faucibus a pellentesque sit amet porttitor eget. Vel facilisis volutpat est velit.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2>Artículos Anidados</h2>
+            <article>
+                <h3>Lorem H3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra pharetra massa massa ultricies mi quis. Placerat orci nulla pellentesque dignissim enim sit. Erat pellentesque adipiscing commodo elit. Enim neque volutpat ac tincidunt vitae semper. Potenti nullam ac tortor vitae purus. Habitant morbi tristique senectus et netus et. Nunc sed augue lacus viverra. Dui accumsan sit amet nulla. Senectus et netus et malesuada fames. Sit amet dictum sit amet justo donec enim diam. Sit amet facilisis magna etiam tempor orci eu lobortis. Phasellus egestas tellus rutrum tellus pellentesque. Arcu non odio euismod lacinia.
+                </p>
+                <p>
+                    Amet nulla facilisi morbi tempus iaculis urna id volutpat. Sed risus pretium quam vulputate dignissim suspendisse in. A erat nam at lectus urna duis. Purus in massa tempor nec feugiat nisl pretium fusce id. Ridiculus mus mauris vitae ultricies. Sed libero enim sed faucibus turpis in. Enim facilisis gravida neque convallis a cras semper auctor neque. Convallis posuere morbi leo urna molestie at elementum eu. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Faucibus a pellentesque sit amet porttitor eget. Vel facilisis volutpat est velit.
+                </p>
                 <article>
-                    <h2>Lorem 1</h2>
-                    <table>
-                        <caption>Título de la tabla</caption>
-                        <thead>
-                            <tr>
-                                
-                            </tr>
-                        </thead>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                    </table>
-                    
-                    
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam tempor orci eu lobortis elementum nibh tellus molestie nunc. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. Tincidunt dui ut ornare lectus sit amet est. Auctor elit sed vulputate mi sit. Eu turpis egestas pretium aenean pharetra magna. Scelerisque purus semper eget duis at tellus at urna. Vulputate mi sit amet mauris commodo. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Elit ut aliquam purus sit amet. Auctor eu augue ut lectus arcu bibendum at varius. Ac tincidunt vitae semper quis lectus.</p>
+                    <h4>Lorem H4</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra pharetra massa massa ultricies mi quis. Placerat orci nulla pellentesque dignissim enim sit. Erat pellentesque adipiscing commodo elit. Enim neque volutpat ac tincidunt vitae semper. Potenti nullam ac tortor vitae purus. Habitant morbi tristique senectus et netus et. Nunc sed augue lacus viverra. Dui accumsan sit amet nulla. Senectus et netus et malesuada fames. Sit amet dictum sit amet justo donec enim diam. Sit amet facilisis magna etiam tempor orci eu lobortis. Phasellus egestas tellus rutrum tellus pellentesque. Arcu non odio euismod lacinia.
+                    </p>
+                    <p>
+                        Amet nulla facilisi morbi tempus iaculis urna id volutpat. Sed risus pretium quam vulputate dignissim suspendisse in. A erat nam at lectus urna duis. Purus in massa tempor nec feugiat nisl pretium fusce id. Ridiculus mus mauris vitae ultricies. Sed libero enim sed faucibus turpis in. Enim facilisis gravida neque convallis a cras semper auctor neque. Convallis posuere morbi leo urna molestie at elementum eu. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Faucibus a pellentesque sit amet porttitor eget. Vel facilisis volutpat est velit.
+                    </p>
+                    <article>
+                        <h5>Lorem H5</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra pharetra massa massa ultricies mi quis. Placerat orci nulla pellentesque dignissim enim sit. Erat pellentesque adipiscing commodo elit. Enim neque volutpat ac tincidunt vitae semper. Potenti nullam ac tortor vitae purus. Habitant morbi tristique senectus et netus et. Nunc sed augue lacus viverra. Dui accumsan sit amet nulla. Senectus et netus et malesuada fames. Sit amet dictum sit amet justo donec enim diam. Sit amet facilisis magna etiam tempor orci eu lobortis. Phasellus egestas tellus rutrum tellus pellentesque. Arcu non odio euismod lacinia.
+                        </p>
+                        <p>
+                            Amet nulla facilisi morbi tempus iaculis urna id volutpat. Sed risus pretium quam vulputate dignissim suspendisse in. A erat nam at lectus urna duis. Purus in massa tempor nec feugiat nisl pretium fusce id. Ridiculus mus mauris vitae ultricies. Sed libero enim sed faucibus turpis in. Enim facilisis gravida neque convallis a cras semper auctor neque. Convallis posuere morbi leo urna molestie at elementum eu. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Faucibus a pellentesque sit amet porttitor eget. Vel facilisis volutpat est velit.
+                        </p>
+                    </article>
                 </article>
-                <article>
-                    <h2>Lorem 2</h2>
-                    <p>Pellentesque nec nam aliquam sem et tortor consequat id porta. Fames ac turpis egestas maecenas. Malesuada fames ac turpis egestas integer eget aliquet nibh praesent. At lectus urna duis convallis convallis tellus id interdum. Ridiculus mus mauris vitae ultricies. Id semper risus in hendrerit gravida rutrum quisque. Arcu ac tortor dignissim convallis aenean. Egestas maecenas pharetra convallis posuere. Rhoncus est pellentesque elit ullamcorper. Nullam vehicula ipsum a arcu cursus vitae congue mauris. Odio eu feugiat pretium nibh ipsum consequat. Mi bibendum neque egestas congue. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales.</p>
-                </article>
-                <article>
-                    <h2>Lorem 3</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero nunc consequat interdum varius sit amet. Tellus rutrum tellus pellentesque eu tincidunt tortor. Purus gravida quis blandit turpis cursus. Risus nec feugiat in fermentum posuere urna nec tincidunt praesent. Lectus quam id leo in vitae turpis. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Gravida dictum fusce ut placerat. In fermentum et sollicitudin ac. Aenean et tortor at risus viverra adipiscing at in.</p>
-                </article>
-                <article>
-                    <h2> lorem 4</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero nunc consequat interdum varius sit amet. Tellus rutrum tellus pellentesque eu tincidunt tortor. Purus gravida quis blandit turpis cursus. Risus nec feugiat in fermentum posuere urna nec tincidunt praesent. Lectus quam id leo in vitae turpis. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Gravida dictum fusce ut placerat. In fermentum et sollicitudin ac. Aenean et tortor at risus viverra adipiscing at in.</p>
-                </article>
+            </article>
+        </section>
+        <section>
 
-            </section>
-            <section>
-                <h2>ARTICULOS ANIDADOS</h2>
-                <article>
-                    <h3>Anidado lorem 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero nunc consequat interdum varius sit amet. Tellus rutrum tellus pellentesque eu tincidunt tortor. Purus gravida quis blandit turpis cursus. Risus nec feugiat in.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero nunc consequat interdum varius sit amet. Tellus rutrum tellus pellentesque eu tincidunt tortor. Purus gravida quis blandit turpis cursus. Risus nec feugiat in.</p>
-                </article>
-                <article>
-                    <h4>Anidado anidado lorem 2</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero nunc consequat interdum varius sit amet. Tellus rutrum tellus pellentesque eu tincidunt tortor. Purus gravida quis blandit turpis cursus. Risus nec feugiat in fermentum posuere urna nec tincidunt praesent. Lectus quam id leo in vitae turpis. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Gravida dictum fusce ut placerat. In fermentum et sollicitudin ac. Aenean et tortor at risus viverra adipiscing at in.</p>
-                </article>
-
-
-                </article>
-
-            </section>
-            <section>
-
-            </section>
-
+        </section>
     </main>
     <footer>
-        <h2>pie de página</h2>
+        <h2>Pie de página</h2>
     </footer>
 </body>
 
