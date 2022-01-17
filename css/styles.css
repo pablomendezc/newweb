@@ -10,7 +10,7 @@
         }
         
         * {
-            color: red;
+            color: blue;
         }
         
         /* Esto anula y sustituye lo anterior */
@@ -48,7 +48,7 @@
 
         }
 
-        /* clase indica que pone el texto el versalitas*/
+        
         .todomayusculas {
             
             font-variant: small-caps
