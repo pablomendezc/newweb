@@ -1,4 +1,10 @@
-ul, ul li { margin: 1; padding: 1; list-style: none; }
- h2, p, form { margin: 0; padding: 0; }
-.clear { clear: both; }
-img { border: none; }
+
+#main-container{
+    margin: auto;
+    width:auto;
+        }
+table, th{
+    width:auto
+        text-align:center
+        
+}
