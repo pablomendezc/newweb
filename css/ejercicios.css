@@ -1,0 +1,12 @@
+/*colores ejercicio*/
+<title>Ejercicios </title>
+<style type="ejercicios/css">
+table, tr, th, td {border:1px solid #000; border-collapse:collapse; padding:5px;}
+
+     .ejercicio2 h1 {
+    color: teal;
+    font-size: xx-large;
+}   
+        .ejercicio2 strong {
+    color: red;
+}
