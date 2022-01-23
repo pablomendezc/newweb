@@ -36,6 +36,20 @@ nav ul li{
 .clearfix{
     clear:both;
 }
+
+#content{
+    float:left;
+    width: 80%;
+    min-height: 500px;
+    background: blue;
+}
+
+aside{
+    float:left;
+    width: 20%;
+    min-height: 500px;
+    background: aliceblue;
+ }
     
 }
 .article{
