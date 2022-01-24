@@ -41,17 +41,23 @@ nav ul li{
     float:left;
     width: 80%;
     min-height: 500px;
-    background: blue;
+    background: aliceblue;
 }
 
 aside{
     float:left;
-    width: 20%;
-    min-height: 500px;
-    background: aliceblue;
+    width:20%;
+    min-height:500px;
+    background:aliceblue;
  }
+footer{
+    blackground:black;
+    color:white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    
     
 }
-.article{
     
-}
+
