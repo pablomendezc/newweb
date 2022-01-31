@@ -1,0 +1,100 @@
+ h1 {
+            color: blue;
+            font-family: Verdana;
+            font-size: 50px;
+        }
+
+        h2 {
+            color: red;
+            font-family: Arial;
+            font-size: 30px;      }
+        p {
+            color: yellow;
+            background: black;
+            font-family: Arial;
+            font-size: 20px;
+        }
+
+/*segundo ejercicio tabla colores*/
+
+table {
+    font-size: 1.5em;
+    border: 3px solid black;
+    /* Para evitar llos espacios entre celdas */
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid black;
+}
+
+/* Apartado 1.b */
+/* Ulilizar una clase para resaltar la primera celda de cada fila, opniéndola en color azul sobre un fondo amarillo */
+
+.resaltado {
+    background-color: yellow;
+    color: blue;
+}
+
+/* Apartado 1.c */
+/* Ulizar pseudoclases para realtar el última celda de cada fila, poniéndola d color rojo sobre fondo gris */
+
+td:last-child {
+    background-color: grey;
+    color: red;
+}
+
+/* También valdría:  */
+
+td:last-of-type {
+    background-color: grey;
+    color: red;
+}
+
+/*tercer ejercicio enlaces*/
+
+
+body,html {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  width: 19.5%;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: black;
+}
+
+li:last-child a {
+  margin-right: 0;
+}
+
+a:link, a:visited, a:focus {
+  background: yellow;
+}
+
+a:hover {
+  background: orange;
+}
+
+a:active {
+  background: red;
+  color: white;
+}
+
+
+
