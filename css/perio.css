@@ -21,17 +21,18 @@ header{
     line-height: 150px;
     color: black;
 }
-p.box1 {
-width:150px;
+p.box1izq {
+width:200px;
 margin:10px 50px;
 padding:20px;
 font-size:italic;
 background-color:pink;
 color:black;
-    float:right;
+float:right;
 }
-p.box2 {
-width:150px;
+
+p.box2derecha {
+width:100px;
 margin:10px 50px;
 padding:20px;
 font-size:italic;
@@ -47,20 +48,17 @@ nav {
     border-bottom: 1px solid black;
 }
 
-aside{
-    float:left;
-    width:20%;
-    min-height:500px;
-    background:aliceblue;
- }
 footer{
     blackground:black;
     color:white;
     text-align: center;
     height: 50px;
     line-height: 50px;
-    
-    
+      
 }
+a.{
+    float: left;
+}
+
     
 
