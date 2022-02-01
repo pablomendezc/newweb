@@ -1,0 +1,72 @@
+<!-- Declaración del tipo de documento HTML, siempre en la 1ª línea -->
+<!DOCTYPE html>
+<!-- Elemento html. Atributos lenguaje y dirección de lectura -->
+<html lang="es" dir="ltr">
+<!-- Cabecera oculta del documento web que solo ven los robots -->
+
+<head>
+    <!-- Juego de caracteres de casi todos los idiomas humanos (incluidos ñ, tildes ...) -->
+    <meta charset="utf-8" />
+    <!-- Escala inicial y renderizado _responsive_ por el ancho del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compatibilidad con Microsoft Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Indéxame NO y sígueme NO -->
+    <meta name="robots" content="noIndex, noFollow" />
+    <!-- Breve descripción del sitio que se verá en los resultados de búsqueda -->
+    <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1303, Elaboración de hojas de estilos" />
+    <!-- Título de la pestaña del navegador -->
+    <title>Tarea 1.a,tarea 2 | UF1303 UD.1</title>
+    <link rel="stylesheet" href="../css/esecss.css" />
+    <!-- Estilos CSS en el propio documento html -->
+    <!-- Los estilos así declarados se aplican a todo ESTE documento html -->
+    <!-- Así TIENEN PRIORIDAD sobre las hojas de estilos externas -->
+    <!-- Precisamente para el caso de que las hojas de estilos sean procedentes de repositorios de terceros, plantillas, frameworks, etc. -->
+</head>
+
+<body>
+   <header>
+      <h1>Elaboración de tablas en hojas de estilo CSS</h1> 
+   </header>
+   <nav></nav>
+    <main>
+        <article>
+            <h2>Caso práctico 2</h2>
+            <p>
+                Crear una tabla en html de 3 filas y 4 columnas con algún texto en sus celdas. Se quiere resaltar el contenido de varias celdas, usando un archivo css externo.
+            </p>
+            <table summary="Descripción de la tabla y su contenido">
+                <caption>Título de la tabla</caption>
+		        <!-- Simple table -->
+                <tr>
+                    <td class="resaltado">Celda 1</td>
+                    <td>Celda 2</td>
+                    <td>Celda 3</td>
+                    <td>Celda 4</td>
+                </tr>
+                <tr>
+                    <td class="resaltado">Celda 5</td>
+                    <td>Celda 6</td>
+                    <td>Celda 7</td>
+                    <td>Celda 8</td>
+                </tr>
+                <tr>
+                    <td class="resaltado">Celda 9</td>
+                    <td>Celda 10</td>
+                    <td>Celda 11</td>
+                    <td>Celda 12</td>
+                </tr>
+            </table>
+        </article>
+        <ul>
+  <li><a ref="https://es.wikipedia.org/wiki/Amarillo">amarillo</a></li> 
+    <li><a href="https://es.wikipedia.org/wiki/Azul">azul</a></li> 
+    <li><a href = "https://es.wikipedia.org/wiki/Verde">verde</a> </li> 
+    </ul>
+        
+    </main>
+    <footer></footer>
+    
+</body>
+
+</html>
